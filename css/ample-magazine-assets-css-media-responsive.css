@@ -1,0 +1,117 @@
+.ample-content {
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+/*open menu for drop-down*/
+/* Text meant only for screen readers. */
+/*open menu for drop-down*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+a:focus {
+    outline: thin dotted!important;
+}
+ul li a:focus ~ ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    left: auto;
+    animation: fadeinUp .3s;
+}
+ul li:focus-within > ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left: auto;
+    animation: fadeinUp .3s;
+}
+
+
+
+*:focus , button:focus {
+    outline: 1px dotted;
+}
+
+a:focus {
+    outline: thin dotted!important;
+}
+ul li a:focus ~ ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    left: auto;
+    animation: fadeinUp .3s;
+}
+ul sub:focus-within > li {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    left: auto;
+    animation: fadeinUp .3s;
+}
+
+.search-form input.search-field:focus, input[type='submit']:focus, .form-wrapper input[type='text']:focus {
+    border: 1px solid #0083ff;
+    outline: 1px dotted;
+}
+
+
+
+#primary #infinite-handle span button:focus, button:focus, a.button:focus, a.custom-button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .search-form .search-submit:focus, .header-search-box > a:focus {
+    outline: 2px dotted #1d6ea5;
+}
+.nav.navbar-nav li {
+    padding-right: 23px;
+}
+
+.nav.navbar-nav li {
+    padding-right: 9px;
+}
+@media (max-width: 1199px) and (min-width: 992px){
+ul.navbar-nav>li>a, .dropdown-menu li a {
+    font-size: 14px;
+    padding: 0px 2px
+}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    ul.navbar-nav li a {
+        line-height: normal !important;
+        color: #fff;
+        border-top: 1px solid #0e0e0e00 !important;
+        border-bottom: 0;
+        padding: 14px 6px;
+        display: block;
+        min-width: 0;
+    }
+}
+
+/*This file was exported by "Export WP Page to Static HTML" plugin which created by ReCorp (https://myrecorp.com) */
